@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lobster|Pacifico&display=swap");
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.insert-text {
+  width: 30%;
+  padding: 1em;
+  background-color: purple;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-top: 2em;
+  width: 80%;
+}
+
+.insert-text,
+.container {
+  text-align: center;
+}
+
+.insert-text {
+  border: 3px solid darkblue;
+  border-radius: 3px;
+}
+
+.general {
+  width: 60%;
+  min-height: 350px;
+  padding: 1em;
+  border: 3px solid darkblue;
+  font-size: 16px;
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: purple;
+}
+
+input,
+button {
+  padding: 0.8em;
+  border-radius: 0.5em;
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+  border: 3px solid darkblue;
+}
+
+input {
+  margin-right: 10px;
+}
+
+.special {
+  min-width: 15%;
+  min-height: 25%;
+  padding: 5px;
+  margin-bottom: 3px;
+  font-family: "Lobster", cursive;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  border: 1px solid green;
+}
+
+/* Media Queries */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .wrapper {
+    padding: 1em;
+    height: 100vh;
+  }
+  .insert-text {
+    text-align: center;
+    width: 80%;
+    margin-bottom: 70px;
+  }
+  input,
+  button {
+    font-size: 10px;
+    padding: 0.3em;
+  }
+  button {
+    margin-top: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .general {
+    min-width: 30%;
+    min-height: 80%;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    min-height: 100vh;
+    min-width: 100%;
+  }
+  .insert-text {
+    width: 50%;
+  }
+  input,
+  button {
+    font-size: 16px;
+  }
+  .general {
+    font-size: 32px;
+    font-weight: lighter;
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .insert-text {
+    width: 50%;
+  }
+  input,
+  button {
+    font-size: 16px;
+  }
+  .general {
+    font-size: 32px;
+    min-width: 50%;
+  }
+}
